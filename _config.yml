@@ -5,15 +5,15 @@
 
 #######################################################################################
 # Book settings
-title                       : CI_Test  # The title of the book. Will be placed in the left navbar.
-author                      : CI_Test  # The author of the book
-copyright                   : "2025"  # Copyright year to be placed in the footer
+title                       : STScI test  # The title of the book. Will be placed in the left navbar.
+author                      : STScI  # The author of the book
+copyright                   : "2024"  # Copyright year to be placed in the footer
 logo                        : stsci_logo2.png  # A path to the book logo
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
 execute:
-  execute_notebooks         : force   # Whether to execute notebooks at build time. Must be one of ("auto", "force", "cache", "off")
+  execute_notebooks         : off   # Whether to execute notebooks at build time. Must be one of ("auto", "force", "cache", "off")
   timeout                   : -1    # timeout in seconds, -1 removes timeout restrictions
   only_build_toc_files: true
 
@@ -35,7 +35,7 @@ parse:
   
 launch_buttons:
   thebe                  : true
-  binderhub_url: ""
+ # binderhub_url: ""
 
 # Information about where the book exists on the web
 repository:
@@ -46,6 +46,5 @@ repository:
 # Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
 html:
-  google_analytics_id:
   use_issues_button: true
   use_repository_button: true
